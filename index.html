@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammz Toko</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://img102.pixhost.to/images/354/570282775_aanzcuyxzzz.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .neon-text span {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #00f, 0 0 30px #00f;
+            animation: neon-flicker 1.5s infinite alternate;
+        }
+        .neon-text span:nth-child(1) { animation-delay: 0s; }
+        .neon-text span:nth-child(2) { animation-delay: 0.2s; }
+        .neon-text span:nth-child(3) { animation-delay: 0.4s; }
+        .neon-text span:nth-child(4) { animation-delay: 0.6s; }
+        .neon-text span:nth-child(5) { animation-delay: 0.8s; }
+        .neon-text span:nth-child(6) { animation-delay: 1s; }
+        .neon-text span:nth-child(7) { animation-delay: 1.2s; }
+        .neon-text span:nth-child(8) { animation-delay: 1.4s; }
+
+        @keyframes neon-flicker {
+            0% { opacity: 0.3; text-shadow: 0 0 5px #0ff, 0 0 10px #00f; }
+            50% { opacity: 1; text-shadow: 0 0 15px #0ff, 0 0 25px #00f, 0 0 35px #00f; }
+            100% { opacity: 0.3; text-shadow: 0 0 5px #0ff, 0 0 10px #00f; }
+        }
+        p {
+            color: white;
+            font-size: 1.2em;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #007BFF, 0 0 20px #00f;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 20px #0056b3, 0 0 40px #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://files.catbox.moe/84cy1a.png" alt="Hamzz Store Logo" class="logo">
+        <p>Hamz Store - Layanan Digital Terbaik untuk Anda</p>
+        <p>Harap Aktifkan Mode Dekstop</p>
+
+        <div class="button-container">
+            <a href="harga_list.html" class="button">Lihat Harga</a>
+            <a href="https://wa.me/6285787975324?text=.layanan" class="button">Hubungi Owner</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - Hamz Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://img102.pixhost.to/images/354/570282775_aanzcuyxzzz.jpg') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(10px);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); }
+            100% { box-shadow: 0 0 30px rgba(0, 255, 255, 1); }
+        }
+        .image-box {
+            flex-shrink: 0;
+        }
+        .image-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+        .content {
+            flex-grow: 1;
+        }
+        h1 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px #0ff, 0 0 20px #00f; }
+            100% { text-shadow: 0 0 15px #0ff, 0 0 25px #00f; }
+        }
+        .price-list {
+            margin-top: 20px;
+        }
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            background: rgba(0, 255, 255, 0.2);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            transition: 0.3s;
+        }
+        .price-item:hover {
+            background: rgba(0, 255, 255, 0.4);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #007BFF, #00f);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #007BFF;
+            transition: 0.3s;
+            animation: buttonGlow 1.5s infinite alternate;
+        }
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 15px #007BFF; }
+            100% { box-shadow: 0 0 25px #00f; }
+        }
+        .back-button:hover {
+            background: linear-gradient(90deg, #00f, #007BFF);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="https://files.catbox.moe/84cy1a.png" alt="Panel Pterodactyl">
+        </div>
+        <div class="content">
+            <h1>Daftar Harga Nokos WhatsApp</h1>
+            <div class="price-list">
+                <div class="price-item"><span>Nokos WhatsApp Indonesia</span><span>Rp 7.000</span></div>
+                <div class="price-item"><span>Nokos WhatsApp Malaysia</span><span>Rp 10.000</span></div>
+                <div class="price-item"><span>Nokos WhatsApp Brazil</span><span>Rp 15.000</span></div>
+                <div class="price-item"><span>Nokos WhatsApp Thailand</span><span>Rp 15.000</span></div>
+                <div class="price-item"><span>Nokos WhatsApp China</span><span>Rp 20.000</span></div>
+                <div class="price-item"><span>Philippines</span><span>Rp 7.000</span></div>
+            </div>
+            <a href="index.html" class="back-button">Kembali</a>
+        </div>
+    </div>
+</body>
+</html>

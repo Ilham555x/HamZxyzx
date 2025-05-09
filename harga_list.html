@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - Hamz Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://img102.pixhost.to/images/354/570282775_aanzcuyxzzz.jpg') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(10px);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); }
+            100% { box-shadow: 0 0 30px rgba(0, 255, 255, 1); }
+        }
+        h1 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px #0ff, 0 0 20px #00f; }
+            100% { text-shadow: 0 0 15px #0ff, 0 0 25px #00f; }
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(90deg, #007BFF, #00f);
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #007BFF;
+            transition: 0.3s;
+            animation: buttonGlow 1.5s infinite alternate;
+        }
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 15px #007BFF; }
+            100% { box-shadow: 0 0 25px #00f; }
+        }
+        .button:hover {
+            background: linear-gradient(90deg, #00f, #007BFF);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Harga Layanan</h1>
+        <div class="button-container">
+            <a href="harga_panel.html" class="button">Harga Panel</a>
+            <a href="harga_nokos.html" class="button">Harga Nokos</a>
+            <a href="harga_vps.html" class="button">Harga Vps</a>
+            <a href="source.html" class="button">Harga Seller Panel</a>
+             <a href="jasa.html" class="button">Harga Jasa</a>
+        </div>
+        <a href="index.html" class="button" style="margin-top: 20px;">Kembali</a>
+    </div>
+</body>
+</html>
